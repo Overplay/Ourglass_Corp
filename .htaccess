@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^overplay.io$ [OR]
+RewriteCond %{HTTP_HOST} ^www.overplay.io$
+RewriteRule (.*)$ http://www.ourglass.tv/$1 [R=301,L]
